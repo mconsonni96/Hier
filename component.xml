@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>DigiLAB</spirit:vendor>
+  <spirit:library>hier</spirit:library>
+  <spirit:name>BeltBus_TDL_Channel_TDC</spirit:name>
+  <spirit:version>3.7</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_blockdiagram</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_blockdiagram_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>fb71eb8a</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>cd7cf861</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_productguide</spirit:name>
+        <spirit:displayName>Product Guide</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:docs.productguide</spirit:envIdentifier>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_utilityxitfiles</spirit:name>
+        <spirit:displayName>Utility XIT/TTCL</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xit.util</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_utilityxitfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f829d8e2</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_versioninformation</spirit:name>
+        <spirit:displayName>Version Information</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:docs.versioninfo</spirit:envIdentifier>
+      </spirit:view>
+    </spirit:views>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_00d5eecb</spirit:name>
+      <spirit:enumeration>C</spirit:enumeration>
+      <spirit:enumeration>O</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_2dd08346</spirit:name>
+      <spirit:enumeration>16</spirit:enumeration>
+      <spirit:enumeration>32</spirit:enumeration>
+      <spirit:enumeration>64</spirit:enumeration>
+      <spirit:enumeration>128</spirit:enumeration>
+      <spirit:enumeration>256</spirit:enumeration>
+      <spirit:enumeration>512</spirit:enumeration>
+      <spirit:enumeration>1024</spirit:enumeration>
+      <spirit:enumeration>2048</spirit:enumeration>
+      <spirit:enumeration>4096</spirit:enumeration>
+      <spirit:enumeration>8192</spirit:enumeration>
+      <spirit:enumeration>16384</spirit:enumeration>
+      <spirit:enumeration>32768</spirit:enumeration>
+      <spirit:enumeration>65536</spirit:enumeration>
+      <spirit:enumeration>131072</spirit:enumeration>
+      <spirit:enumeration>262144</spirit:enumeration>
+      <spirit:enumeration>524288</spirit:enumeration>
+      <spirit:enumeration>1048576</spirit:enumeration>
+      <spirit:enumeration>2097152</spirit:enumeration>
+      <spirit:enumeration>4194304</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_35b7864e</spirit:name>
+      <spirit:enumeration>SIM</spirit:enumeration>
+      <spirit:enumeration>IMP</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_4152761a</spirit:name>
+      <spirit:enumeration>DN</spirit:enumeration>
+      <spirit:enumeration>UP</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_444abea7</spirit:name>
+      <spirit:enumeration>CEC</spirit:enumeration>
+      <spirit:enumeration>CTD</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_44c459b8</spirit:name>
+      <spirit:enumeration>auto</spirit:enumeration>
+      <spirit:enumeration>block</spirit:enumeration>
+      <spirit:enumeration>distributed</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_7014e494</spirit:name>
+      <spirit:enumeration>Belt-Bus</spirit:enumeration>
+      <spirit:enumeration>Timestamp</spirit:enumeration>
+      <spirit:enumeration>Both</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_77d89077</spirit:name>
+      <spirit:enumeration>MD</spirit:enumeration>
+      <spirit:enumeration>TD</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9e98e97b</spirit:name>
+      <spirit:enumeration>CDC</spirit:enumeration>
+      <spirit:enumeration>FIFO</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_aea49064</spirit:name>
+      <spirit:enumeration>T2B</spirit:enumeration>
+      <spirit:enumeration>LOG</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_b785c09e</spirit:name>
+      <spirit:enumeration>AREA</spirit:enumeration>
+      <spirit:enumeration>TIME</spirit:enumeration>
+      <spirit:enumeration>COST</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_f85fd6e2</spirit:name>
+      <spirit:enumeration>-</spirit:enumeration>
+      <spirit:enumeration>+</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_blockdiagram_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>appcore</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/BeltBus_TDL_Channel_TDC_v3_7.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_cd7cf861</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_utilityxitfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>./logo.png</spirit:name>
+        <spirit:userFileType>image</spirit:userFileType>
+        <spirit:userFileType>LOGO</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>gui/BeltBus_TDL_Channel_TDC_v3_5.gtcl</spirit:name>
+        <spirit:userFileType>GTCL</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Single Tapped Dealy-Line (TDL) TDC Channel with Dual-Edge Sensitivity (DES)</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">MODULE_NAME_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_FID</spirit:name>
+      <spirit:displayName>Bit FID</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_FID" spirit:minimum="0" spirit:maximum="4" spirit:rangeType="long">2</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.BIT_FID">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_COARSE</spirit:name>
+      <spirit:displayName>Bit Coarse</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_COARSE" spirit:minimum="1" spirit:maximum="128" spirit:rangeType="long">8</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.BIT_COARSE">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_UNCALIBRATED</spirit:name>
+      <spirit:displayName>Bit Uncalibrated</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_UNCALIBRATED" spirit:minimum="2" spirit:maximum="16" spirit:rangeType="long">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>CEC_VS_CTD_COUNTER</spirit:name>
+      <spirit:displayName>Coarse Extension Core vs Coarse Tree Distributor</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CEC_VS_CTD_COUNTER" spirit:choiceRef="choice_list_444abea7">CEC</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>CEC_COARSE_CNT_INIT</spirit:name>
+      <spirit:displayName>CEC Coarse Counter Initialization</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.CEC_COARSE_CNT_INIT" spirit:minimum="0" spirit:maximum="255" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.CEC_COARSE_CNT_INIT">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FIFO_MEMORY_TYPE</spirit:name>
+      <spirit:displayName>Synchronizer FIFO Type</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.FIFO_MEMORY_TYPE" spirit:choiceRef="choice_list_44c459b8">distributed</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.FIFO_MEMORY_TYPE">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FIFO_WRITE_DEPTH</spirit:name>
+      <spirit:displayName>Synchronizer FIFO Depth</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.FIFO_WRITE_DEPTH" spirit:choiceRef="choice_list_2dd08346">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MAX_INPUT_ENGINE_AND_PIPELINE_STAGE1</spirit:name>
+      <spirit:displayName>Maximum Number of inputs of the engines of the second stage</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MAX_INPUT_ENGINE_AND_PIPELINE_STAGE1" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MAX_INPUT_ENGINE_AND_PIPELINE_STAGE2</spirit:name>
+      <spirit:displayName>Maximum Number of inputs of the engines of the third stage</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MAX_INPUT_ENGINE_AND_PIPELINE_STAGE2" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MAX_INPUT_ENGINE_AND_PIPELINE_STAGE3</spirit:name>
+      <spirit:displayName>Maximum Number of inputs of the engines of the fourth stage</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MAX_INPUT_ENGINE_AND_PIPELINE_STAGE3" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MAX_NUM_BIT_EQ_PIPELINE_STAGE0</spirit:name>
+      <spirit:displayName>Blocks of bits to be compared in the first stage</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MAX_NUM_BIT_EQ_PIPELINE_STAGE0" spirit:minimum="1" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>RELATED_CLOCKS</spirit:name>
+      <spirit:displayName>TDC and SYS Clocks Relation</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.RELATED_CLOCKS">FALSE</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.RELATED_CLOCKS">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>CDC_SYNC_STAGES</spirit:name>
+      <spirit:displayName>Synchronizer FIFO CDC Stages</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.CDC_SYNC_STAGES" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.CDC_SYNC_STAGES">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>INTERNAL_OVERFLOW_CNT</spirit:name>
+      <spirit:displayName>Overflow Counter in CEC or in OC</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.INTERNAL_OVERFLOW_CNT">FALSE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_NUM_CH</spirit:name>
+      <spirit:displayName>Bit Number of Channel</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_NUM_CH" spirit:minimum="1" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.BIT_NUM_CH">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HOLD_ON_INTEGRAL</spirit:name>
+      <spirit:displayName>Hold-On Integral</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HOLD_ON_INTEGRAL" spirit:minimum="0" spirit:maximum="2147483647" spirit:rangeType="long">5</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.HOLD_ON_INTEGRAL">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HOLD_ON_MIN_MOD</spirit:name>
+      <spirit:displayName>Hold-On Min Mod</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HOLD_ON_MIN_MOD" spirit:minimum="0" spirit:maximum="2147483647" spirit:rangeType="long">1</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.HOLD_ON_MIN_MOD">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HOLD_ON_SINGLE_NODE</spirit:name>
+      <spirit:displayName>Number of clock cycles in Hold-on phase</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HOLD_ON_SINGLE_NODE" spirit:minimum="0" spirit:maximum="2147483647" spirit:rangeType="long">1</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.HOLD_ON_SINGLE_NODE">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>INJECT_CYCLES</spirit:name>
+      <spirit:displayName>Number of inject cycles</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.INJECT_CYCLES" spirit:minimum="0" spirit:maximum="2147483647" spirit:rangeType="long">15</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.INJECT_CYCLES">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUM_CH</spirit:name>
+      <spirit:displayName>Number of Channel</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_CH" spirit:minimum="0" spirit:maximum="255" spirit:rangeType="long">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUM_NODE</spirit:name>
+      <spirit:displayName>Node Number</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_NODE" spirit:minimum="0" spirit:maximum="255" spirit:rangeType="long">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PASS_THROUGH</spirit:name>
+      <spirit:displayName>Pass Through</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PASS_THROUGH" spirit:choiceRef="choice_list_7014e494">Belt-Bus</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>RETAIN_SINGLE_NODE</spirit:name>
+      <spirit:displayName>Retain Single Node</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.RETAIN_SINGLE_NODE" spirit:minimum="0" spirit:maximum="2147483647" spirit:rangeType="long">1</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.RETAIN_SINGLE_NODE">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUM_TAP_TDL</spirit:name>
+      <spirit:displayName>Number of Taps</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_TAP_TDL" spirit:minimum="4" spirit:maximum="4096" spirit:rangeType="long">256</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUMBER_OF_TDL</spirit:name>
+      <spirit:displayName>Number of TDL</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUMBER_OF_TDL" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_SMP_TDL</spirit:name>
+      <spirit:displayName>Taps Sampled of the TDL</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SMP_TDL" spirit:minimum="1" spirit:maximum="256" spirit:rangeType="long">256</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BUFFERING_STAGE</spirit:name>
+      <spirit:displayName>Buffering Stage inside TDL</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.BUFFERING_STAGE">FALSE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DEBUG_MODE</spirit:name>
+      <spirit:displayName>Debug Port V-TDL</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.DEBUG_MODE">FALSE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SIM_VS_IMP</spirit:name>
+      <spirit:displayName>Simulation vs Implementation</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.SIM_VS_IMP" spirit:choiceRef="choice_list_35b7864e">IMP</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FILE_PATH_NAME_CO_DELAY</spirit:name>
+      <spirit:displayName>CO Delay Path</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.FILE_PATH_NAME_CO_DELAY">/home/nicola/Documents/Vivado/Projects/Time-to-Digital_Converter/TappedDelayLine/TappedDelayLine.srcs/sim_1/new/CO_O_Delay.txt</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.FILE_PATH_NAME_CO_DELAY">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FILE_PATH_NAME_O_DELAY</spirit:name>
+      <spirit:displayName>O Delay Path</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.FILE_PATH_NAME_O_DELAY">/home/nicola/Documents/Vivado/Projects/Time-to-Digital_Converter/TappedDelayLine/TappedDelayLine.srcs/sim_1/new/CO_O_Delay.txt</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.FILE_PATH_NAME_O_DELAY">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MAX_VALID_TAP_POS</spirit:name>
+      <spirit:displayName>Maximum Valid Position</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MAX_VALID_TAP_POS" spirit:minimum="0" spirit:maximum="255" spirit:rangeType="long">255</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.MAX_VALID_TAP_POS">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>NUM_TAP_PRE_TDL</spirit:name>
+      <spirit:displayName>Number of Taps</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_TAP_PRE_TDL" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_SMP_PRE_TDL</spirit:name>
+      <spirit:displayName>Taps Sampled of the PRE-TDL</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SMP_PRE_TDL" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MIN_VALID_TAP_POS</spirit:name>
+      <spirit:displayName>Minimum Valid Position</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MIN_VALID_TAP_POS" spirit:minimum="0" spirit:maximum="254" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.MIN_VALID_TAP_POS">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_0</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 0</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_0" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_0">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_1</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 1</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_1" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_1">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_2</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 2</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_2" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_2">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_3</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 3</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_3" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_3">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_4</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 4</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_4" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_4">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_5</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 5</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_5" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_5">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_6</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 6</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_6" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_6">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_7</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 7</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_7" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_7">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_8</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 8</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_8" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_8">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_9</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 9</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_9" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_9">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_10</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 10</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_10" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_10">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_11</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 11</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_11" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_11">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_12</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 12</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_12" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_12">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_13</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 13</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_13" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_13">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_14</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 14</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_14" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_14">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_TAP_TDL_15</spirit:name>
+      <spirit:displayName>Offset Sampled Taps TDL 15</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_TAP_TDL_15" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OFFSET_TAP_TDL_15">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>STEP_VALID_TAP_POS</spirit:name>
+      <spirit:displayName>Step of Valid Position</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.STEP_VALID_TAP_POS" spirit:minimum="1" spirit:maximum="255" spirit:rangeType="long">1</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.STEP_VALID_TAP_POS">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_0</spirit:name>
+      <spirit:displayName>Type TDL 0</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_0" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_0">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_1</spirit:name>
+      <spirit:displayName>Type TDL 1</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_1" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_1">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_2</spirit:name>
+      <spirit:displayName>Type TDL 2</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_2" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_2">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_3</spirit:name>
+      <spirit:displayName>Type TDL 3</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_3" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_3">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_4</spirit:name>
+      <spirit:displayName>Type TDL 4</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_4" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_4">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_5</spirit:name>
+      <spirit:displayName>Type TDL 5</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_5" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_5">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_6</spirit:name>
+      <spirit:displayName>Type TDL 6</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_6" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_6">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_7</spirit:name>
+      <spirit:displayName>Type TDL 7</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_7" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_7">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_8</spirit:name>
+      <spirit:displayName>Type TDL 8</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_8" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_8">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_9</spirit:name>
+      <spirit:displayName>Type TDL 9</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_9" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_9">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_10</spirit:name>
+      <spirit:displayName>Type TDL 10</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_10" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_10">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_11</spirit:name>
+      <spirit:displayName>Type TDL 11</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_11" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_11">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_12</spirit:name>
+      <spirit:displayName>Type TDL 12</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_12" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_12">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_13</spirit:name>
+      <spirit:displayName>Type TDL 13</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_13" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_13">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_14</spirit:name>
+      <spirit:displayName>Type TDL 14</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_14" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_14">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_TDL_15</spirit:name>
+      <spirit:displayName>Type TDL 15</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_TDL_15" spirit:choiceRef="choice_list_00d5eecb">C</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_TDL_15">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VALID_NUMBER_OF_TDL_INIT</spirit:name>
+      <spirit:displayName>Valid Position TDL Initialization</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VALID_NUMBER_OF_TDL_INIT" spirit:minimum="0" spirit:maximum="0" spirit:rangeType="long">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>VALID_POSITION_TAP_INIT</spirit:name>
+      <spirit:displayName>Valid Position Tap Initialization</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VALID_POSITION_TAP_INIT" spirit:minimum="0" spirit:maximum="255" spirit:rangeType="long">31</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MD_VS_TD</spirit:name>
+      <spirit:displayName>Macro vs Turbo Decoder</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.MD_VS_TD" spirit:choiceRef="choice_list_77d89077">MD</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_BUBBLE</spirit:name>
+      <spirit:displayName>Bit of Bubble</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_BUBBLE" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_SUB_INT</spirit:name>
+      <spirit:displayName>Bit Sub-Interpolated</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SUB_INT" spirit:minimum="2" spirit:maximum="16" spirit:rangeType="long">8</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.BIT_SUB_INT">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DEBUG_PORT_DECODER</spirit:name>
+      <spirit:displayName>Debug Port Iper Decoder</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.DEBUG_PORT_DECODER">FALSE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_0</spirit:name>
+      <spirit:displayName>Log2 Decoder Max Input Engine of Tree Adder at Pipeline Stage 0 </spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_0" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">2</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_0">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_1</spirit:name>
+      <spirit:displayName>Log2 Decoder Max Input Engine of Tree Adder at Pipeline Stage 1 </spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_1" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">2</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_1">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_0</spirit:name>
+      <spirit:displayName>T2B Decoder Max Input Engine of Thermo-to-Binary at Pipeline Stage 0 </spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_0" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_0">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_1</spirit:name>
+      <spirit:displayName>T2B Decoder Max Input Engine of Thermo-to-Binary at Pipeline Stage 1 </spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_1" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">2</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_1">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_2</spirit:name>
+      <spirit:displayName>T2B Decoder Max Input Engine of Thermo-to-Binary at Pipeline Stage 2 </spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_2" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">2</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_2">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_3</spirit:name>
+      <spirit:displayName>T2B Decoder Max Input Engine of Thermo-to-Binary at Pipeline Stage 3 </spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_3" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">2</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.DECO_T2B_MAX_INPUT_ENGINE_PIPELINE_3">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>EDGE_CHECK</spirit:name>
+      <spirit:displayName>Edge Check</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.EDGE_CHECK">FALSE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FREE_RUNNING</spirit:name>
+      <spirit:displayName>Free Running</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.FREE_RUNNING">TRUE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OPTIMIZATION_MODE</spirit:name>
+      <spirit:displayName>Turbo Decoder Optimization Mode</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.OPTIMIZATION_MODE" spirit:choiceRef="choice_list_b785c09e">TIME</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.OPTIMIZATION_MODE">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PRINT_FULL_REPORT</spirit:name>
+      <spirit:displayName>Print Full Report</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.PRINT_FULL_REPORT">FALSE</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.PRINT_FULL_REPORT">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SUB_INT_MAX_INPUT_ENGINE_PIPELINE_0</spirit:name>
+      <spirit:displayName>Sub-Interpolator  Max Input Engine of Tree Adder at Pipeline Stage 0 </spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SUB_INT_MAX_INPUT_ENGINE_PIPELINE_0" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.SUB_INT_MAX_INPUT_ENGINE_PIPELINE_0">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SUB_INT_MAX_INPUT_ENGINE_PIPELINE_1</spirit:name>
+      <spirit:displayName>Sub-Interpolator  Max Input Engine of Tree Adder at Pipeline Stage 1 </spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SUB_INT_MAX_INPUT_ENGINE_PIPELINE_1" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">2</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.SUB_INT_MAX_INPUT_ENGINE_PIPELINE_1">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_DECODER</spirit:name>
+      <spirit:displayName>Thermo-to-Binary vs Log2 Decoder</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_DECODER" spirit:choiceRef="choice_list_aea49064">T2B</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_0</spirit:name>
+      <spirit:displayName>Type Edge TDL 0</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_0" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_0">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_1</spirit:name>
+      <spirit:displayName>Type Edge TDL 1</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_1" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_1">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_2</spirit:name>
+      <spirit:displayName>Type Edge TDL 2</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_2" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_2">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_3</spirit:name>
+      <spirit:displayName>Type Edge TDL 3</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_3" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_3">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_4</spirit:name>
+      <spirit:displayName>Type Edge TDL 4</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_4" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_4">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_5</spirit:name>
+      <spirit:displayName>Type Edge TDL 5</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_5" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_5">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_6</spirit:name>
+      <spirit:displayName>Type Edge TDL 6</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_6" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_6">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_7</spirit:name>
+      <spirit:displayName>Type Edge TDL 7</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_7" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_7">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_8</spirit:name>
+      <spirit:displayName>Type Edge TDL 8</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_8" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_8">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_9</spirit:name>
+      <spirit:displayName>Type Edge TDL 9</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_9" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_9">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_10</spirit:name>
+      <spirit:displayName>Type Edge TDL 10</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_10" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_10">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_11</spirit:name>
+      <spirit:displayName>Type Edge TDL 11</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_11" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_11">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_12</spirit:name>
+      <spirit:displayName>Type Edge TDL 12</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_12" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_12">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_13</spirit:name>
+      <spirit:displayName>Type Edge TDL 13</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_13" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_13">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_14</spirit:name>
+      <spirit:displayName>Type Edge TDL 14</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_14" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_14">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TYPE_EDGE_15</spirit:name>
+      <spirit:displayName>Type Edge TDL 15</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.TYPE_EDGE_15" spirit:choiceRef="choice_list_4152761a">DN</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.TYPE_EDGE_15">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>WEIGHT_AREA_VS_TIME_PERCENT</spirit:name>
+      <spirit:displayName>Weigth Percent of Cost</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.WEIGHT_AREA_VS_TIME_PERCENT" spirit:minimum="0" spirit:maximum="100" spirit:rangeType="long">100</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.WEIGHT_AREA_VS_TIME_PERCENT">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>AXI4_LENGTH</spirit:name>
+      <spirit:displayName>AXI4 Length</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI4_LENGTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_CALIBRATION</spirit:name>
+      <spirit:displayName>Bit Calibration</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_CALIBRATION" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">24</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_RESOLUTION</spirit:name>
+      <spirit:displayName>Bit Resolution</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_RESOLUTION" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DEBUG_MODE_CC</spirit:name>
+      <spirit:displayName>Debug Port CharactCurve</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.DEBUG_MODE_CC">FALSE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DEBUG_MODE_CT</spirit:name>
+      <spirit:displayName>Debug Port CalibTable</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.DEBUG_MODE_CT">FALSE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>INTEGRATION_METHOD</spirit:name>
+      <spirit:displayName>Integration Method</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.INTEGRATION_METHOD" spirit:choiceRef="choice_list_f85fd6e2">-</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SAVE_BIT</spirit:name>
+      <spirit:displayName>Save One Bit in Magic Calibrator</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.SAVE_BIT">TRUE</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_COARSE_CEC</spirit:name>
+      <spirit:displayName>Bit Coarse CEC</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_COARSE_CEC" spirit:minimum="1" spirit:maximum="32" spirit:rangeType="long">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MODE_SEL</spirit:name>
+      <spirit:displayName>Mode Selection</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.MODE_SEL" spirit:choiceRef="choice_list_9e98e97b">FIFO</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SYNCH_RELATED_CLOCKS</spirit:name>
+      <spirit:displayName>Related Clocks</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.SYNCH_RELATED_CLOCKS">FALSE</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.SYNCH_RELATED_CLOCKS">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SYNCH_CDC_SYNC_STAGES</spirit:name>
+      <spirit:displayName>CDC Syncronization Stages</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SYNCH_CDC_SYNC_STAGES" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.SYNCH_CDC_SYNC_STAGES">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DATA_WIDTH</spirit:name>
+      <spirit:displayName>Input/Output Data Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DATA_WIDTH" spirit:minimum="1" spirit:maximum="100" spirit:rangeType="long">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>DEST_SYNC_FF</spirit:name>
+      <spirit:displayName>Destination Synchronization FF</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.DEST_SYNC_FF" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.DEST_SYNC_FF">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SYNCH_FIFO_MEMORY_TYPE</spirit:name>
+      <spirit:displayName>FIFO Memory Type</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.SYNCH_FIFO_MEMORY_TYPE" spirit:choiceRef="choice_list_44c459b8">distributed</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.SYNCH_FIFO_MEMORY_TYPE">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FIFO_DEPTH</spirit:name>
+      <spirit:displayName>FIFO Depth</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.FIFO_DEPTH" spirit:choiceRef="choice_list_2dd08346">16</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.FIFO_DEPTH">true</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>SRC_SYNC_FF</spirit:name>
+      <spirit:displayName>Source Synchronization FF</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SRC_SYNC_FF" spirit:minimum="2" spirit:maximum="8" spirit:rangeType="long">4</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.SRC_SYNC_FF">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Beta">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/TDC_Basic</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>BeltBus TDL Channel TDC</xilinx:displayName>
+      <xilinx:autoFamilySupportLevel>level_2</xilinx:autoFamilySupportLevel>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>TimeEngineers:ip:MODULE_NAME:1.0</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2022-02-21T16:07:47Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="TimeEngineers:ip:MODULE_NAME:1.0_ARCHIVE_LOCATION">c:/Users/user1/Desktop/hier doc/doc-hierarchical/template</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d5af003_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@475515ba_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a98bbc7_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11cde397_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df215d7_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@549ed90b_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10f554b7_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1397b368_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c7334a0_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ee044a_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b7535_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd1c0c_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7469ae0a_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b9f01e_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c6aff81_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d873860_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30039a6_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62c63fdb_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c639824_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ac40e30_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59689ba7_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25a50005_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d9a3653_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d401516_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@117cc73b_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d07ceb4_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@194a1be2_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e3ff02e_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14af4c2d_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67bbeefd_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@475c4e37_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d31b4fa_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5441fcde_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@631f855c_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4487e98f_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@584b81a0_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4095a0e0_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6487f14e_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a7dcb87_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e48d578_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@670d6448_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54568f8f_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42f60f57_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61c7777f_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ea0e3e9_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@246f6a96_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fcc1485_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3761f13e_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e04652_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@495b1f15_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d8d2da_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22cf94cd_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c834a8a_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59143698_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@481b2604_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2142a616_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52223e34_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a61886b_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9c3617c_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24bff315_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d56e6d_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@431c8d20_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f196253c"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="76643755"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
