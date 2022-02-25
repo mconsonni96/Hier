@@ -19,7 +19,9 @@ proc update_contents {cell_name args} {
 
 	# -------------- vlnv of the instantiated IP-Cores -------------------------
 	# List the VLNV of IPs
-	set _VLNV(XU_VTDL) "DigiLAB:ip:AXI4Stream_XUS_VirtualTDL:1.0"
+	
+	
+	set _VLNV(XUS_VTDL) "DigiLAB:ip:AXI4Stream_XUS_VirtualTDL:1.0"
 	set _VLNV(ID) "DigiLAB:ip:AXI4Stream_IperDecoder:1.3"
 	set _VLNV(CEC) "DigiLAB:ip:AXI4Stream_CoarseExtensionCore:3.6"
 	set _VLNV(MC) "DigiLAB:ip:AXI4Stream_MagicCalibrator:2.5"
@@ -34,7 +36,9 @@ proc update_contents {cell_name args} {
 	# Set cell_obj as current instance
 	current_bd_instance $cell_obj
 	
+	
 	#AXI4Stream_XUS_VirtualTDL generics
+	set XUS_VS_X7S [get_property CONFIG.XUS_VS_X7S $cell_obj]
 	set BUFFERING_STAGE [get_property CONFIG.BUFFERING_STAGE $cell_obj]
 	set DEBUG_MODE [get_property CONFIG.DEBUG_MODE $cell_obj]
 	set SIM_VS_IMP [get_property CONFIG.SIM_VS_IMP $cell_obj]
@@ -389,10 +393,11 @@ proc update_contents {cell_name args} {
 
 	# ------ AXI4Stream_XUS_VirtualTDL -------
 	# Create instance: AXI4Stream_XUS_VirtualTDL_0, and set properties
-	if {[get_bd_cells $cell_obj/AXI4Stream_XUS_VirtualTDL_0] == ""} {
-		set AXI4Stream_XUS_VirtualTDL_0 [ create_bd_cell -type ip -vlnv $_VLNV(XU_VTDL) AXI4Stream_XUS_VirtualTDL_0 ]
+	if {[get_bd_cells $cell_obj/AXI4Stream_XUS_VirtualTDL_0] == "" } {
+		set AXI4Stream_XUS_VirtualTDL_0 [ create_bd_cell -type ip -vlnv $_VLNV(XUS_VTDL) AXI4Stream_XUS_VirtualTDL_0 ]
 	}
 	set_property -dict [ list \
+		CONFIG.XUS_VS_X7S "$XUS_VS_X7S" \
 		CONFIG.BUFFERING_STAGE "$BUFFERING_STAGE" \
 		CONFIG.DEBUG_MODE "$DEBUG_MODE" \
 		CONFIG.SIM_VS_IMP "$SIM_VS_IMP" \
@@ -444,6 +449,8 @@ proc update_contents {cell_name args} {
 
 	] [get_bd_cells $cell_obj/AXI4Stream_XUS_VirtualTDL_0]
 	# ----------------------------------------
+	
+
 
 
 	# ------- AXI4Stream_IperDecoder ---------
@@ -715,7 +722,7 @@ proc update_contents {cell_name args} {
 	# -------------------- Create port connections -----------------------------
 
 
-	# ------- AXI4Stream_XUS_VirtualTDL ------
+	# ------- AXI4Stream_VirtualTDL ------
 	#AsyncInput
 	if {[get_bd_nets $cell_obj/AsyncInput_1] == "" } {
 		connect_bd_net -net AsyncInput_1 [get_bd_pins AXI4Stream_XUS_VirtualTDL_0/AsyncInput] [get_bd_pins AsyncInput]

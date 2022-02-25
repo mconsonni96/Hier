@@ -5,6 +5,8 @@ source [file join [file dirname [file dirname [info script]]] gui/BeltBus_TDL_Ch
 # Definitional proc to organize widgets for parameters.
 proc init_gui { IPINST } {
   ipgui::add_param $IPINST -name "Component_Name"
+  set XUS_VS_X7S [ipgui::add_param $IPINST -name "XUS_VS_X7S" -widget comboBox]
+  set_property tooltip {Use TDL for Xilinx UltraScale or Xilinx 7-Series} ${XUS_VS_X7S}
   set NUM_TAP_TDL [ipgui::add_param $IPINST -name "NUM_TAP_TDL"]
   set_property tooltip {Number of Taps in each TDL} ${NUM_TAP_TDL}
   set NUMBER_OF_TDL [ipgui::add_param $IPINST -name "NUMBER_OF_TDL"]
@@ -103,8 +105,6 @@ proc init_gui { IPINST } {
   set_property tooltip {Choose the modality for setting the paramiters of the Decoder, automatic (Turbo) or manual (Macro)} ${MD_VS_TD}
   set BIT_BUBBLE [ipgui::add_param $IPINST -name "BIT_BUBBLE"]
   set_property tooltip {Maximum estention of a bubble error over the TDL} ${BIT_BUBBLE}
-  set BIT_COARSE [ipgui::add_param $IPINST -name "BIT_COARSE"]
-  set_property tooltip {Bit Coarse Counter output dimension} ${BIT_COARSE}
   set BIT_SUB_INT [ipgui::add_param $IPINST -name "BIT_SUB_INT"]
   set_property tooltip {Bit dimenstino of Bit Sub-Interpolated Output} ${BIT_SUB_INT}
   set DEBUG_PORT_DECODER [ipgui::add_param $IPINST -name "DEBUG_PORT_DECODER"]
@@ -171,6 +171,8 @@ proc init_gui { IPINST } {
   set_property tooltip {Weigth Percent of the Cost to tune the settings of the pre-processor, Area is 0 Time is 100} ${WEIGHT_AREA_VS_TIME_PERCENT}
   set BIT_FID [ipgui::add_param $IPINST -name "BIT_FID"]
   set_property tooltip {Bit reserver to the FID of the Belt Bus used to identify properly the timestamps} ${BIT_FID}
+  set BIT_COARSE [ipgui::add_param $IPINST -name "BIT_COARSE"]
+  set_property tooltip {Bit Coarse Counter output dimension} ${BIT_COARSE}
   set BIT_UNCALIBRATED [ipgui::add_param $IPINST -name "BIT_UNCALIBRATED"]
   set_property tooltip {Bit Dimension of Uncalibrated_TDL} ${BIT_UNCALIBRATED}
   set CEC_VS_CTD_COUNTER [ipgui::add_param $IPINST -name "CEC_VS_CTD_COUNTER" -widget comboBox]
@@ -2104,6 +2106,24 @@ proc update_PARAM_VALUE.VALID_POSITION_TAP_INIT { PARAM_VALUE.VALID_POSITION_TAP
 
 proc validate_PARAM_VALUE.VALID_POSITION_TAP_INIT { PARAM_VALUE.VALID_POSITION_TAP_INIT } {
 	# Procedure called to validate VALID_POSITION_TAP_INIT
+	return true
+}
+
+proc update_PARAM_VALUE.X7S_VS_XUS { PARAM_VALUE.X7S_VS_XUS } {
+	# Procedure called to update X7S_VS_XUS when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.X7S_VS_XUS { PARAM_VALUE.X7S_VS_XUS } {
+	# Procedure called to validate X7S_VS_XUS
+	return true
+}
+
+proc update_PARAM_VALUE.XUS_VS_X7S { PARAM_VALUE.XUS_VS_X7S } {
+	# Procedure called to update XUS_VS_X7S when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.XUS_VS_X7S { PARAM_VALUE.XUS_VS_X7S } {
+	# Procedure called to validate XUS_VS_X7S
 	return true
 }
 

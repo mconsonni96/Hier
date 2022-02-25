@@ -1,3 +1,27 @@
+# UltraScale or 7-Series
+# XUS_VS_X7S	:	STRING(1 To 3)	:= "XUS";
+
+# --------------XUS_VS_X7S---------------
+set name "XUS_VS_X7S"
+
+set LIST_XUS_VS_X7S {XUS X7S}
+set DEFAULT_XUS_VS_X7S "XUS"
+
+set enablement {True}
+set editable {}
+
+set dependency {}
+
+
+set tooltip "Use TDL for Xilinx UltraScale or Xilinx 7-Series"
+set display_name "XUS vs X7S"
+
+
+create_param_string_list $name $LIST_XUS_VS_X7S $DEFAULT_XUS_VS_X7S $enablement $editable $dependency $tooltip $display_name
+# ----------------------------------------------
+
+
+
 # Bit of the Tapped Delay-Line (number of buffers in the TDL)
 # NUM_TAP_TDL		:	POSITIVE	RANGE 4 TO 4096	:= 32;
 

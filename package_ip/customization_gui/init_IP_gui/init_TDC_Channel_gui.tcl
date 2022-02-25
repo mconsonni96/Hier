@@ -8,7 +8,9 @@ proc init_TDC_Channel_gui { IPINST Page} {
     # set Input_Buffer [ipgui::add_group $IPINST -name "Input Buffer" -parent ${TDC_Channel}]
 	# set INPUT_BUFFER_TYPE [ipgui::add_param $IPINST -name "INPUT_BUFFER_TYPE" -parent ${Input_Buffer} -widget comboBox]
     # set_property tooltip {Choose between Single-Ended (IBUF) and Fully-Differential (IBUFDS) input buffer} ${INPUT_BUFFER_TYPE}
-
+    set Technology_Type [ipgui::add_group $IPINST -name "Technology Type" -parent ${TDC_Channel}]
+    set XUS_VS_X7S [ipgui::add_param $IPINST -name "XUS_VS_X7S" -parent ${Technology_Type}] 
+    
 	#Adding Group
     set TDL_Dimensions [ipgui::add_group $IPINST -name "Tapped Delay-Line Dimensions" -parent ${TDC_Channel}]
     set NUM_TAP_TDL [ipgui::add_param $IPINST -name "NUM_TAP_TDL" -parent ${TDL_Dimensions}]
