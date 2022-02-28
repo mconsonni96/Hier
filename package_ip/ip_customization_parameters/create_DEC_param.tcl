@@ -39,20 +39,19 @@ create_param_long_range "BIT_BUBBLE" $MIN_BIT_BUBBLE $MAX_BIT_BUBBLE $DEFAULT_BI
 # BIT_COARSE		:	NATURAL		RANGE	0	TO	32	:=	8;
 
 # ---------------- BIT_COARSE -----------------
-# set MIN_BIT_COARSE 0
-# set MAX_BIT_COARSE 32
-# set DEFAULT_BIT_COARSE 8
+set MIN_BIT_COARSE 0
+set MAX_BIT_COARSE 32
+set DEFAULT_BIT_COARSE 8
 
-# set enablement {True}
-# set editable {}
+set enablement {True}
+set editable {}
 
-# set dependency {}
+set dependency {}
 
-# set tooltip "Bit Coarse Counter dimension"
-# set display_name "Bit Coarse"
+set tooltip "Bit Pipeline used for Coarse Counter and/or Polarity"
+set display_name "Bit Pipeline (Coarse)"
 
-# create_param_long_range "BIT_COARSE" $MIN_BIT_COARSE $MAX_BIT_COARSE $DEFAULT_BIT_COARSE $enablement $editable $dependency $tooltip $display_name
-# ----------------------------------------------
+create_param_long_range "BIT_PIPE_COARSE" $MIN_BIT_COARSE $MAX_BIT_COARSE $DEFAULT_BIT_COARSE $enablement $editable $dependency $tooltip $display_name
 
 
 # Bit of Log2Dn/Up

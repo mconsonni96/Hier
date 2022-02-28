@@ -16,7 +16,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>09697746</spirit:value>
+            <spirit:value>c7447b5f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -30,7 +30,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5bb7ef3f</spirit:value>
+            <spirit:value>d6255bea</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -170,7 +170,7 @@
       <spirit:file>
         <spirit:name>xgui/BeltBus_TDL_Channel_TDC_v3_7.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5bb7ef3f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_d6255bea</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1384,6 +1384,11 @@
       <spirit:displayName>XUS vs X7S</spirit:displayName>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.XUS_VS_X7S" spirit:choiceRef="choice_list_eed992d6">XUS</spirit:value>
     </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BIT_PIPE_COARSE</spirit:name>
+      <spirit:displayName>Bit Pipeline (Coarse)</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_PIPE_COARSE" spirit:minimum="0" spirit:maximum="32" spirit:rangeType="long">8</spirit:value>
+    </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
@@ -1414,12 +1419,12 @@
       </xilinx:taxonomies>
       <xilinx:displayName>BeltBus TDL Channel TDC</xilinx:displayName>
       <xilinx:autoFamilySupportLevel>level_2</xilinx:autoFamilySupportLevel>
-      <xilinx:coreRevision>10</xilinx:coreRevision>
+      <xilinx:coreRevision>15</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>TimeEngineers:ip:MODULE_NAME:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2022-02-28T10:28:50Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2022-02-28T15:39:59Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="TimeEngineers:ip:MODULE_NAME:1.0_ARCHIVE_LOCATION">c:/Users/user1/Desktop/hier doc/doc-hierarchical/template</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@d5af003_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
@@ -1538,12 +1543,42 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5b2781e7_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4e27d0eb_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@14c8fc72_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e5429b6_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53892cc9_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@456d2f18_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34d26ace_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46ab2394_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c0a4518_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ad445ad_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78295a5e_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@762cb4c4_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66a6628_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79aa6b35_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1651e64d_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f559478_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55e2cd5d_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@557139d_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3565cc5e_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a8ff0c2_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68dacf1e_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f7ddb9e_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15f4bb27_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@645e7389_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b56d161_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ee9cddb_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64796041_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63496d91_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7412633d_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f642684_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75f3e05d_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@379eebd2_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@645cc6a3_ARCHIVE_LOCATION">/home/mconsonni/Utility_Ip_Core/ip-repo/BeltBus_TDL_Channel_TDC</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="db714431"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="d3c91ac9"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cd9acae2"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="56e52610"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

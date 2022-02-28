@@ -112,7 +112,7 @@ proc update_contents {cell_name args} {
 	set EDGE_CHECK [get_property CONFIG.EDGE_CHECK $cell_obj]
 	set MD_VS_TD [get_property CONFIG.MD_VS_TD $cell_obj]
 	set TYPE_DECODER [get_property CONFIG.TYPE_DECODER $cell_obj]
-	set BIT_COARSE [get_property CONFIG.BIT_COARSE $cell_obj]
+	set BIT_PIPE_COARSE [get_property CONFIG.BIT_PIPE_COARSE $cell_obj]
 	set BIT_SUB_INT [get_property CONFIG.BIT_SUB_INT $cell_obj]
 	set BIT_BUBBLE [get_property CONFIG.BIT_BUBBLE $cell_obj]
 	set DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_0 [get_property CONFIG.DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_0 $cell_obj]
@@ -462,7 +462,7 @@ proc update_contents {cell_name args} {
 		#TODO togli CONFIG.BIT_SUB_INT {8}?
 		set_property -dict [ list \
 			CONFIG.BIT_SUB_INT {8} \
-			CONFIG.BIT_PIPE_COARSE {1} \
+			CONFIG.BIT_PIPE_COARSE {0} \
 		] $AXI4Stream_IperDecoder_0
 	}
 
@@ -488,7 +488,7 @@ proc update_contents {cell_name args} {
 		CONFIG.EDGE_CHECK "$EDGE_CHECK" \
 		CONFIG.MD_VS_TD "$MD_VS_TD" \
 		CONFIG.TYPE_DECODER "$TYPE_DECODER" \
-		CONFIG.BIT_PIPE_COARSE {1} \
+		CONFIG.BIT_PIPE_COARSE {0} \
 		CONFIG.BIT_SUB_INT "$BIT_SUB_INT" \
 		CONFIG.BIT_BUBBLE "$BIT_BUBBLE" \
 		CONFIG.DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_0 "$DECO_LOG_MAX_INPUT_ENGINE_PIPELINE_0" \

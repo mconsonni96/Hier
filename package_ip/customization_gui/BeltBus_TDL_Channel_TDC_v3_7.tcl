@@ -105,6 +105,8 @@ proc init_gui { IPINST } {
   set_property tooltip {Choose the modality for setting the paramiters of the Decoder, automatic (Turbo) or manual (Macro)} ${MD_VS_TD}
   set BIT_BUBBLE [ipgui::add_param $IPINST -name "BIT_BUBBLE"]
   set_property tooltip {Maximum estention of a bubble error over the TDL} ${BIT_BUBBLE}
+  set BIT_PIPE_COARSE [ipgui::add_param $IPINST -name "BIT_PIPE_COARSE"]
+  set_property tooltip {Bit Pipeline used for Coarse Counter and/or Polarity} ${BIT_PIPE_COARSE}
   set BIT_SUB_INT [ipgui::add_param $IPINST -name "BIT_SUB_INT"]
   set_property tooltip {Bit dimenstino of Bit Sub-Interpolated Output} ${BIT_SUB_INT}
   set DEBUG_PORT_DECODER [ipgui::add_param $IPINST -name "DEBUG_PORT_DECODER"]
@@ -1791,6 +1793,15 @@ proc update_PARAM_VALUE.BIT_NUM_CH { PARAM_VALUE.BIT_NUM_CH } {
 
 proc validate_PARAM_VALUE.BIT_NUM_CH { PARAM_VALUE.BIT_NUM_CH } {
 	# Procedure called to validate BIT_NUM_CH
+	return true
+}
+
+proc update_PARAM_VALUE.BIT_PIPE_COARSE { PARAM_VALUE.BIT_PIPE_COARSE } {
+	# Procedure called to update BIT_PIPE_COARSE when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.BIT_PIPE_COARSE { PARAM_VALUE.BIT_PIPE_COARSE } {
+	# Procedure called to validate BIT_PIPE_COARSE
 	return true
 }
 
