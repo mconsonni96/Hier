@@ -21,7 +21,7 @@ proc update_contents {cell_name args} {
 	# List the VLNV of IPs
 	
 	
-	set _VLNV(XUS_VTDL) "DigiLAB:ip:AXI4Stream_XUS_VirtualTDL:1.0"
+	set _VLNV(VTDL) "DigiLAB:ip:AXI4Stream_VirtualTDL:1.0"
 	set _VLNV(ID) "DigiLAB:ip:AXI4Stream_IperDecoder:1.3"
 	set _VLNV(CEC) "DigiLAB:ip:AXI4Stream_CoarseExtensionCore:3.6"
 	set _VLNV(MC) "DigiLAB:ip:AXI4Stream_MagicCalibrator:2.5"
@@ -37,7 +37,7 @@ proc update_contents {cell_name args} {
 	current_bd_instance $cell_obj
 	
 	
-	#AXI4Stream_XUS_VirtualTDL generics
+	#AXI4Stream_VirtualTDL generics
 	set XUS_VS_X7S [get_property CONFIG.XUS_VS_X7S $cell_obj]
 	set BUFFERING_STAGE [get_property CONFIG.BUFFERING_STAGE $cell_obj]
 	set DEBUG_MODE [get_property CONFIG.DEBUG_MODE $cell_obj]
@@ -242,7 +242,7 @@ proc update_contents {cell_name args} {
 	# Considering the interfaced reported before
 
 
-	# ------- AXI4Stream_XUS_VirtualTDL ------
+	# ------- AXI4Stream_VirtualTDL ------
 	#AsyncInput
 	if {[get_bd_pins $cell_obj/AsyncInput] == "" } {
 		create_bd_pin -dir I -type data AsyncInput
@@ -391,10 +391,10 @@ proc update_contents {cell_name args} {
 	# ----------------- Crate Instance of IP list in vnlv ----------------------
 
 
-	# ------ AXI4Stream_XUS_VirtualTDL -------
-	# Create instance: AXI4Stream_XUS_VirtualTDL_0, and set properties
-	if {[get_bd_cells $cell_obj/AXI4Stream_XUS_VirtualTDL_0] == "" } {
-		set AXI4Stream_XUS_VirtualTDL_0 [ create_bd_cell -type ip -vlnv $_VLNV(XUS_VTDL) AXI4Stream_XUS_VirtualTDL_0 ]
+	# ------ AXI4Stream_VirtualTDL -------
+	# Create instance: AXI4Stream_VirtualTDL_0, and set properties
+	if {[get_bd_cells $cell_obj/AXI4Stream_VirtualTDL_0] == "" } {
+		set AXI4Stream_VirtualTDL_0 [ create_bd_cell -type ip -vlnv $_VLNV(VTDL) AXI4Stream_VirtualTDL_0 ]
 	}
 	set_property -dict [ list \
 		CONFIG.XUS_VS_X7S "$XUS_VS_X7S" \
@@ -447,7 +447,7 @@ proc update_contents {cell_name args} {
 		CONFIG.NUM_TAP_PRE_TDL "$NUM_TAP_PRE_TDL" \
 
 
-	] [get_bd_cells $cell_obj/AXI4Stream_XUS_VirtualTDL_0]
+	] [get_bd_cells $cell_obj/AXI4Stream_VirtualTDL_0]
 	# ----------------------------------------
 	
 
@@ -634,8 +634,8 @@ proc update_contents {cell_name args} {
 	# --------------------- Create interface connections -----------------------
 
 	# ------------AXIS V-TDL -> ID -----------
-	if {[get_bd_intf_nets $cell_obj/AXI4Stream_XUS_VirtualTDL_0_M00_AXIS_Undeco] == ""} {
-		connect_bd_intf_net -intf_net AXI4Stream_XUS_VirtualTDL_0_M00_AXIS_Undeco [get_bd_intf_pins AXI4Stream_IperDecoder_0/S00_AXIS_UnDeco] [get_bd_intf_pins AXI4Stream_XUS_VirtualTDL_0/M00_AXIS_Undeco]
+	if {[get_bd_intf_nets $cell_obj/AXI4Stream_VirtualTDL_0_M00_AXIS_Undeco] == ""} {
+		connect_bd_intf_net -intf_net AXI4Stream_VirtualTDL_0_M00_AXIS_Undeco [get_bd_intf_pins AXI4Stream_IperDecoder_0/S00_AXIS_UnDeco] [get_bd_intf_pins AXI4Stream_VirtualTDL_0/M00_AXIS_Undeco]
 	}
 	# ----------------------------------------
 
@@ -725,14 +725,14 @@ proc update_contents {cell_name args} {
 	# ------- AXI4Stream_VirtualTDL ------
 	#AsyncInput
 	if {[get_bd_nets $cell_obj/AsyncInput_1] == "" } {
-		connect_bd_net -net AsyncInput_1 [get_bd_pins AXI4Stream_XUS_VirtualTDL_0/AsyncInput] [get_bd_pins AsyncInput]
+		connect_bd_net -net AsyncInput_1 [get_bd_pins AXI4Stream_VirtualTDL_0/AsyncInput] [get_bd_pins AsyncInput]
 	}
 
 
 
 	# ValidNumberOfTDL
 	if {[get_bd_nets $cell_obj/ValidNumberOfTDL_1] == ""  && $DEBUG_MODE} {
-		connect_bd_net -net ValidNumberOfTDL_1 [get_bd_pins ValidNumberOfTDL] [get_bd_pins AXI4Stream_XUS_VirtualTDL_0/ValidNumberOfTdl]
+		connect_bd_net -net ValidNumberOfTDL_1 [get_bd_pins ValidNumberOfTDL] [get_bd_pins AXI4Stream_VirtualTDL_0/ValidNumberOfTdl]
 	}
 	if {[get_bd_nets $cell_obj/ValidNumberOfTDL_1] == "$cell_obj/ValidNumberOfTDL_1" && !$DEBUG_MODE} {
 		delete_bd_objs [get_bd_nets $cell_obj/ValidNumberOfTDL_1]
@@ -740,7 +740,7 @@ proc update_contents {cell_name args} {
 
 	# ValidPositionTap
 	if {[get_bd_nets $cell_obj/ValidPositionTap_1] == "" && $DEBUG_MODE } {
-		connect_bd_net -net ValidPositionTap_1 [get_bd_pins ValidPositionTap] [get_bd_pins AXI4Stream_XUS_VirtualTDL_0/ValidPositionTap]
+		connect_bd_net -net ValidPositionTap_1 [get_bd_pins ValidPositionTap] [get_bd_pins AXI4Stream_VirtualTDL_0/ValidPositionTap]
 	}
 	if {[get_bd_nets $cell_obj/ValidPositionTap_1] == "$cell_obj/ValidPositionTap_1" && !$DEBUG_MODE} {
 		delete_bd_objs [get_bd_nets $cell_obj/ValidPositionTap_1]
@@ -838,11 +838,11 @@ proc update_contents {cell_name args} {
 
 	# ----------------- TDC ------------------
 	if {[get_bd_nets $cell_obj/Net] == ""} {
-		connect_bd_net -net Net [get_bd_pins reset_TDC] [get_bd_pins AXI4Stream_CoarseExtensionCore_0/reset_TDC] [get_bd_pins AXI4Stream_IperDecoder_0/reset] [get_bd_pins AXI4Stream_XUS_VirtualTDL_0/reset]
+		connect_bd_net -net Net [get_bd_pins reset_TDC] [get_bd_pins AXI4Stream_CoarseExtensionCore_0/reset_TDC] [get_bd_pins AXI4Stream_IperDecoder_0/reset] [get_bd_pins AXI4Stream_VirtualTDL_0/reset]
 	}
 
 	if {[get_bd_nets $cell_obj/Net2] == ""} {
-		connect_bd_net -net Net2 [get_bd_pins clk_TDC] [get_bd_pins AXI4Stream_CoarseExtensionCore_0/clk_TDC] [get_bd_pins AXI4Stream_IperDecoder_0/clk] [get_bd_pins AXI4Stream_XUS_VirtualTDL_0/clk]
+		connect_bd_net -net Net2 [get_bd_pins clk_TDC] [get_bd_pins AXI4Stream_CoarseExtensionCore_0/clk_TDC] [get_bd_pins AXI4Stream_IperDecoder_0/clk] [get_bd_pins AXI4Stream_VirtualTDL_0/clk]
 	}
 	# ----------------------------------------
 
