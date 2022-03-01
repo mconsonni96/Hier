@@ -1,13 +1,13 @@
 # ---------------------------- CEC_COARSE_CNT_INIT -----------------------------
-proc update_PARAM_VALUE.CEC_COARSE_CNT_INIT { PARAM_VALUE.CEC_COARSE_CNT_INIT PARAM_VALUE.CEC_VS_CTD_COUNTER PARAM_VALUE.BIT_COARSE} {
+proc update_PARAM_VALUE.CEC_COARSE_CNT_INIT { PARAM_VALUE.CEC_COARSE_CNT_INIT PARAM_VALUE.CEC_VS_CTD_COUNTER PARAM_VALUE.BIT_COARSE_CEC} {
 	# Procedure called to update CEC_COARSE_CNT_INIT when any of the dependent parameters in the arguments change
 
 	set CEC_COARSE_CNT_INIT ${PARAM_VALUE.CEC_COARSE_CNT_INIT}
 	set CEC_VS_CTD_COUNTER ${PARAM_VALUE.CEC_VS_CTD_COUNTER}
-    set BIT_COARSE ${PARAM_VALUE.BIT_COARSE}
+    set BIT_COARSE_CEC ${PARAM_VALUE.BIT_COARSE_CEC}
 
     set values(CEC_COARSE_CNT_INIT) [get_property value $CEC_COARSE_CNT_INIT]
-    set values(BIT_COARSE) [get_property value $BIT_COARSE]
+    set values(BIT_COARSE_CEC) [get_property value $BIT_COARSE_CEC]
 	set values(CEC_VS_CTD_COUNTER) [get_property value $CEC_VS_CTD_COUNTER]
 
 	if { [gen_USERPARAMETER_CEC_COARSE_CNT_INIT_ENABLEMENT $values(CEC_VS_CTD_COUNTER)] } {
@@ -18,7 +18,7 @@ proc update_PARAM_VALUE.CEC_COARSE_CNT_INIT { PARAM_VALUE.CEC_COARSE_CNT_INIT PA
 
     # Refresh the new range
     set MIN_CEC_COARSE_CNT_INIT 0
-    set MAX_CEC_COARSE_CNT_INIT [expr 2**$values(BIT_COARSE) -1]
+    set MAX_CEC_COARSE_CNT_INIT [expr 2**$values(BIT_COARSE_CEC) -1]
     set_property range  "$MIN_CEC_COARSE_CNT_INIT,$MAX_CEC_COARSE_CNT_INIT" $CEC_COARSE_CNT_INIT
 
 }
@@ -36,18 +36,18 @@ proc update_MODELPARAM_VALUE.CEC_COARSE_CNT_INIT { MODELPARAM_VALUE.CEC_COARSE_C
 
 
 # -------------------------------- BIT_COARSE ----------------------------------
-proc update_PARAM_VALUE.BIT_COARSE { PARAM_VALUE.BIT_COARSE } {
+proc update_PARAM_VALUE.BIT_COARSE_CEC { PARAM_VALUE.BIT_COARSE_CEC } {
 	# Procedure called to update BIT_COARSE when any of the dependent parameters in the arguments change
 }
 
-proc validate_PARAM_VALUE.BIT_COARSE { PARAM_VALUE.BIT_COARSE } {
+proc validate_PARAM_VALUE.BIT_COARSE_CEC { PARAM_VALUE.BIT_COARSE_CEC } {
 	# Procedure called to validate BIT_COARSE
 	return true
 }
 
-proc update_MODELPARAM_VALUE.BIT_COARSE { MODELPARAM_VALUE.BIT_COARSE PARAM_VALUE.BIT_COARSE } {
+proc update_MODELPARAM_VALUE.BIT_COARSE_CEC { MODELPARAM_VALUE.BIT_COARSE_CEC PARAM_VALUE.BIT_COARSE_CEC } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
-	set_property value [get_property value ${PARAM_VALUE.BIT_COARSE}] ${MODELPARAM_VALUE.BIT_COARSE}
+	set_property value [get_property value ${PARAM_VALUE.BIT_COARSE_CEC}] ${MODELPARAM_VALUE.BIT_COARSE_CEC}
 }
 # ------------------------------------------------------------------------------
 

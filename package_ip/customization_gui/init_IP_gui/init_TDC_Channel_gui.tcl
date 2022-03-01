@@ -30,8 +30,8 @@ proc init_TDC_Channel_gui { IPINST Page} {
     set CEC_Dimensions [ipgui::add_group $IPINST -name "Coarse Extension Core Dimensions" -parent ${TDC_Channel}]
 	set BIT_FID [ipgui::add_param $IPINST -name "BIT_FID" -parent ${CEC_Dimensions}]
     set_property tooltip {Bit reserved to the FID of the Belt Bus used to identify properly the timestamps} ${BIT_FID}
-    set BIT_COARSE_CEC [ipgui::add_param $IPINST -name "BIT_COARSE_CEC" -parent ${CEC_Dimensions}]
-    set_property tooltip {Bit Coarse Counter input dimension} ${BIT_COARSE_CEC}
+    #set BIT_COARSE_CEC [ipgui::add_param $IPINST -name "BIT_COARSE_CEC" -parent ${CEC_Dimensions}]
+    #set_property tooltip {Bit Coarse Counter input dimension} ${BIT_COARSE_CEC}
     set BIT_COARSE [ipgui::add_param $IPINST -name "BIT_COARSE" -parent ${CEC_Dimensions}]
     set_property tooltip {Bit Coarse Counter output dimension} ${BIT_COARSE}
 

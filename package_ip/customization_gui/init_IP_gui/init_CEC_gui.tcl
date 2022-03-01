@@ -22,8 +22,8 @@ proc init_CEC_gui { IPINST Page} {
   set_property tooltip {Choice between the interal Coarse Counter inside the Coarse Extension Core (CEC) sub-module and the external Coarse Tree Distributor (CTD)} ${CEC_VS_CTD_COUNTER}
   set CEC_COARSE_CNT_INIT [ipgui::add_param $IPINST -name "CEC_COARSE_CNT_INIT" -parent ${Coarse_Part}]
   set_property tooltip {Initialization value of the CEC Coarse Counter} ${CEC_COARSE_CNT_INIT}
-  #set BIT_COARSE [ipgui::add_param $IPINST -name "BIT_COARSE" -parent ${Coarse_Part}]
-  #set_property tooltip {Bit Coarse Counter dimension} ${BIT_COARSE}
+  set BIT_COARSE [ipgui::add_param $IPINST -name "BIT_COARSE_CEC" -parent ${Coarse_Part}]
+  set_property tooltip {Bit Coarse Counter dimension} ${BIT_COARSE}
 
   #Adding Group
   set Uncalibrated_Fine_Part [ipgui::add_group $IPINST -name "Uncalibrated Fine Part" -parent ${Coarse_Extension_Core}]
